@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wellymandiri-beta/static/css/main.e6c13ad2.css",
+    "main.js": "/wellymandiri-beta/static/js/main.7da05d41.js",
+    "index.html": "/wellymandiri-beta/index.html",
+    "main.e6c13ad2.css.map": "/wellymandiri-beta/static/css/main.e6c13ad2.css.map",
+    "main.7da05d41.js.map": "/wellymandiri-beta/static/js/main.7da05d41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.7da05d41.js"
+  ]
+}
