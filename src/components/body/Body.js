@@ -27,6 +27,7 @@ function Body() {
 
     const [openModal, setOpenModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
+    const [rotation, setRotation] = useState(0);
 
     const listGambar = [
         {
@@ -304,6 +305,10 @@ function Body() {
         setOpenModal(false);
     };
 
+    const rotateImage = () => {
+        setRotation(rotation + 90);
+    };
+
     return (
         <ThemeProvider theme={theme}>
             <BoxContainer>
@@ -394,7 +399,16 @@ function Body() {
                         maxHeight: '100%',
                     }}
                 >
-                    <img src={selectedImage?.imgSrc} alt="" style={{ maxWidth: "90vw", maxHeight: '90vh' }} />
+                    <img src={selectedImage?.imgSrc}
+                        alt=""
+                        style={{
+                            maxWidth: "90vw",
+                            maxHeight: '90vh',
+                            transform: `rotate(${rotation}deg)`,
+                        }} />
+                    <Button variant="contained" onClick={rotateImage}>
+                        Putar 90 Derajat
+                    </Button>
                 </Box>
             </Modal>
         </ThemeProvider>
