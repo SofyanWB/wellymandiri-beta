@@ -21,7 +21,7 @@ function Navbar() {
                     justifyContent: "center",
                 }}>
                 <img
-                    src='/assets/Logo/WM-Logo.jpg'
+                    src='././assets/Logo/WM-Logo.jpg'
                     alt="Gambar"
                     draggable="false"
                     style={{
@@ -30,7 +30,6 @@ function Navbar() {
 
                         width: '539px',
                         height: 'auto',
-                        zIndex: "-99",
                     }} />
             </Box>
         </AppBar>
