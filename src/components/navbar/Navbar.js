@@ -21,14 +21,14 @@ function Navbar() {
                     justifyContent: "center",
                 }}>
                 <img
-                    src='././assets/Logo/WM-Logo.jpg'
+                    src='././assets/Logo/WM-Logo.png'
                     alt="Gambar"
                     draggable="false"
                     style={{
                         userDrag: "none",
                         userSelect: "none",
 
-                        width: '539px',
+                        width: '100px',
                         height: 'auto',
                     }} />
             </Box>
