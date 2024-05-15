@@ -394,7 +394,6 @@ function Body() {
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
-                        boxShadow: 24,
                         maxWidth: '100%',
                         maxHeight: '100%',
                     }}
@@ -404,6 +403,7 @@ function Body() {
                         style={{
                             maxWidth: "90vw",
                             maxHeight: '90vh',
+                            boxShadow: "0 5px 20px 0 rgba(0, 0, 0, 0.1)",
                             transform: `rotate(${rotation}deg)`,
                         }} />
                     <Button variant="contained" onClick={rotateImage}>
