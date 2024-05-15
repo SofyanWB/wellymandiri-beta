@@ -414,14 +414,12 @@ function Body() {
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
-                        bgcolor: 'background.paper',
                         boxShadow: 24,
-                        p: 4,
                         maxWidth: '80%',
                         maxHeight: '80%',
                     }}
                 >
-                    <img src={selectedImage?.imgSrc} alt="" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                    <img src={selectedImage?.imgSrc} alt="" style={{ maxHeight: '100%' }} />
                 </Box>
             </Modal>
         </ThemeProvider>
