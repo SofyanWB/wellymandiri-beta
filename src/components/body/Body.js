@@ -192,6 +192,118 @@ function Body() {
             number: '38',
             imgSrc: 'assets/Gambar/Gambar-38.jpg',
         },
+        {
+            number: '39',
+            imgSrc: 'assets/Gambar/Gambar-39.jpg',
+        },
+        {
+            number: '40',
+            imgSrc: 'assets/Gambar/Gambar-40.jpg',
+        },
+        {
+            number: '41',
+            imgSrc: 'assets/Gambar/Gambar-41.jpg',
+        },
+        {
+            number: '42',
+            imgSrc: 'assets/Gambar/Gambar-42.jpg',
+        },
+        {
+            number: '43',
+            imgSrc: 'assets/Gambar/Gambar-43.jpg',
+        },
+        {
+            number: '44',
+            imgSrc: 'assets/Gambar/Gambar-44.jpg',
+        },
+        {
+            number: '45',
+            imgSrc: 'assets/Gambar/Gambar-45.jpg',
+        },
+        {
+            number: '46',
+            imgSrc: 'assets/Gambar/Gambar-46.jpg',
+        },
+        {
+            number: '47',
+            imgSrc: 'assets/Gambar/Gambar-47.jpg',
+        },
+        {
+            number: '48',
+            imgSrc: 'assets/Gambar/Gambar-48.jpg',
+        },
+        {
+            number: '49',
+            imgSrc: 'assets/Gambar/Gambar-49.jpg',
+        },
+        {
+            number: '50',
+            imgSrc: 'assets/Gambar/Gambar-50.jpg',
+        },
+        {
+            number: '51',
+            imgSrc: 'assets/Gambar/Gambar-51.jpg',
+        },
+        {
+            number: '52',
+            imgSrc: 'assets/Gambar/Gambar-52.jpg',
+        },
+        {
+            number: '53',
+            imgSrc: 'assets/Gambar/Gambar-53.jpg',
+        },
+        {
+            number: '54',
+            imgSrc: 'assets/Gambar/Gambar-54.jpg',
+        },
+        {
+            number: '55',
+            imgSrc: 'assets/Gambar/Gambar-55.jpg',
+        },
+        {
+            number: '56',
+            imgSrc: 'assets/Gambar/Gambar-56.jpg',
+        },
+        {
+            number: '57',
+            imgSrc: 'assets/Gambar/Gambar-57.jpg',
+        },
+        {
+            number: '58',
+            imgSrc: 'assets/Gambar/Gambar-58.jpg',
+        },
+        {
+            number: '59',
+            imgSrc: 'assets/Gambar/Gambar-59.jpg',
+        },
+        {
+            number: '60',
+            imgSrc: 'assets/Gambar/Gambar-60.jpg',
+        },
+        {
+            number: '61',
+            imgSrc: 'assets/Gambar/Gambar-61.jpg',
+        },
+        {
+            number: '62',
+            imgSrc: 'assets/Gambar/Gambar-62.jpg',
+        },
+        {
+            number: '63',
+            imgSrc: 'assets/Gambar/Gambar-63.jpg',
+        },
+        {
+            number: '64',
+            imgSrc: 'assets/Gambar/Gambar-64.jpg',
+        },
+        {
+            number: '65',
+            imgSrc: 'assets/Gambar/Gambar-65.jpg',
+        },
+        {
+            number: '66',
+            imgSrc: 'assets/Gambar/Gambar-66.jpg',
+        },
     ];
 
     return (
@@ -208,7 +320,7 @@ function Body() {
                                 maxWidth: "600px",
                             }}
                                 alt=""
-                                src="/assets/Gambar/Owner-1-edit.jpg" />
+                                src="/assets/Gambar/Owner-1.jpg" />
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                             <TitleText>CV. Welly Mandiri</TitleText>
