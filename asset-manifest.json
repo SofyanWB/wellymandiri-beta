@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wellymandiri-beta/static/css/main.e6c13ad2.css",
-    "main.js": "/wellymandiri-beta/static/js/main.4b4dce7c.js",
+    "main.js": "/wellymandiri-beta/static/js/main.a3d7ac59.js",
     "index.html": "/wellymandiri-beta/index.html",
     "main.e6c13ad2.css.map": "/wellymandiri-beta/static/css/main.e6c13ad2.css.map",
-    "main.4b4dce7c.js.map": "/wellymandiri-beta/static/js/main.4b4dce7c.js.map"
+    "main.a3d7ac59.js.map": "/wellymandiri-beta/static/js/main.a3d7ac59.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.4b4dce7c.js"
+    "static/js/main.a3d7ac59.js"
   ]
 }
