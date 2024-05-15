@@ -1,35 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     BoxContainer,
     BoxForm,
-    BoxAlurPelaksanaan,
     BoxFAQ,
-    BoxTataCaraUpload,
     TitleText,
     TitleLittleText,
-    LittleTitleBoxFAQ,
-    LittleTitleNumberBoxFAQ,
-    BoxPelaksanaan,
-    TitleBoxPelaksanaan,
-    LittleTitleBoxPelaksanaan,
-    LittleBoxTataCaraUpload,
-    LittleTitleBoxTataCaraUpload
 } from "./BodyStyle";
 import {
-    Avatar,
     Box,
     Button,
-    Card,
-    CardContent,
-    CardMedia,
     Divider,
     Grid,
     ImageList,
     ImageListItem,
-    List,
-    ListItem,
-    ListItemAvatar,
+    Modal,
     ThemeProvider,
+    Typography,
     useMediaQuery
 } from "@mui/material";
 import theme from "../theme/theme";
@@ -38,6 +24,9 @@ function Body() {
     document.title = "CV. Welly Mandiri";
 
     const isMobile = useMediaQuery("(max-width: 500px)");
+
+    const [openModal, setOpenModal] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
 
     const listGambar = [
         {
@@ -306,6 +295,15 @@ function Body() {
         },
     ];
 
+    const handleOpenModal = (image) => {
+        setSelectedImage(image);
+        setOpenModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setOpenModal(false);
+    };
+
     return (
         <ThemeProvider theme={theme}>
             <BoxContainer>
@@ -369,6 +367,9 @@ function Body() {
                                             srcSet={`${gambar.imgSrc}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                             src={`${gambar.imgSrc}?w=248&fit=crop&auto=format`}
                                             loading="lazy"
+                                            alt=""
+                                            onClick={() => handleOpenModal(gambar)}
+                                            style={{ cursor: "pointer" }}
                                         />
                                     </ImageListItem>
                                 ))}
@@ -401,6 +402,28 @@ function Body() {
                     </Grid>
                 </Grid>
             </BoxFAQ>
+            <Modal
+                open={openModal}
+                onClose={handleCloseModal}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        bgcolor: 'background.paper',
+                        boxShadow: 24,
+                        p: 4,
+                        maxWidth: '80%',
+                        maxHeight: '80%',
+                    }}
+                >
+                    <img src={selectedImage?.imgSrc} alt="" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                </Box>
+            </Modal>
         </ThemeProvider>
     );
 }
