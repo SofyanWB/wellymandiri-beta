@@ -390,8 +390,8 @@ function Body() {
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
                         boxShadow: 24,
-                        maxWidth: '80%',
-                        maxHeight: '80%',
+                        maxWidth: '100%',
+                        maxHeight: '100%',
                     }}
                 >
                     <img src={selectedImage?.imgSrc} alt="" style={{ maxWidth: "90vw", maxHeight: '90vh' }} />
