@@ -375,30 +375,6 @@ function Body() {
                                 ))}
                             </ImageList>
                         </Box>
-
-                        {/* <Box
-                            sx={{
-                                display: 'grid',
-                                maxWidth: isMobile ? "350px" : "1230px",
-                                gridTemplateColumns: { md: '1fr 1fr 1fr' },
-                                gap: 6,
-                            }}>
-                            {listGambar.map((gambar, i) => (
-                                <Card key={i} elevation={0} square={true} style={{ background: "none", height: "100%" }}>
-                                    <CardMedia component='div'>
-                                        {gambar.imgSrc && (
-                                            <Box style={{ alignItems: 'center', }}>
-                                                <img
-                                                    style={{
-                                                        maxWidth: "100%",
-                                                    }}
-                                                    alt="" src={gambar.imgSrc} />
-                                            </Box>
-                                        )}
-                                    </CardMedia>
-                                </Card>
-                            ))}
-                        </Box> */}
                     </Grid>
                 </Grid>
             </BoxFAQ>
@@ -419,7 +395,7 @@ function Body() {
                         maxHeight: '80%',
                     }}
                 >
-                    <img src={selectedImage?.imgSrc} alt="" style={{ maxHeight: '100%' }} />
+                    <img src={selectedImage?.imgSrc} alt="" style={{ maxHeight: '80vh' }} />
                 </Box>
             </Modal>
         </ThemeProvider>
