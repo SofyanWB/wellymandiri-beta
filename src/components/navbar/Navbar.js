@@ -20,11 +20,18 @@ function Navbar() {
                     alignItems: "center",
                     justifyContent: "center",
                 }}>
-                <Typography variant="h3" color="blue"
-                    sx={{
-                        fontWeight: "500",
-                        alignItems: "center",
-                    }}>CV. Welly Mandiri</Typography>
+                <img
+                    src='/assets/Logo/WM-Logo.jpg'
+                    alt="Gambar"
+                    draggable="false"
+                    style={{
+                        userDrag: "none",
+                        userSelect: "none",
+
+                        width: '539px',
+                        height: 'auto',
+                        zIndex: "-99",
+                    }} />
             </Box>
         </AppBar>
     );
