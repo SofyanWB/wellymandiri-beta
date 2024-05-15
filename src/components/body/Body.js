@@ -382,8 +382,7 @@ function Body() {
                 open={openModal}
                 onClose={handleCloseModal}
                 aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
+                aria-describedby="modal-modal-description">
                 <Box
                     sx={{
                         position: 'absolute',
@@ -395,7 +394,7 @@ function Body() {
                         maxHeight: '80%',
                     }}
                 >
-                    <img src={selectedImage?.imgSrc} alt="" style={{ maxHeight: '80vh' }} />
+                    <img src={selectedImage?.imgSrc} alt="" style={{ maxWidth: "90vw", maxHeight: '90vh' }} />
                 </Box>
             </Modal>
         </ThemeProvider>
