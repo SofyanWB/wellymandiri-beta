@@ -318,7 +318,7 @@ function Body() {
                                 maxWidth: "600px",
                             }}
                                 alt=""
-                                src="/assets/Gambar/Owner-1.jpg" />
+                                src="assets/Gambar/Owner-1.jpg" />
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                             <TitleText>CV. Welly Mandiri</TitleText>
