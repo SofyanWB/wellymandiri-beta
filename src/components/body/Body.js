@@ -331,6 +331,9 @@ function Body() {
                                 src="assets/Gambar/Owner-1.jpg"
                                 draggable="false"
                                 style={{
+                                    userDrag: "none",
+                                    userSelect: "none",
+
                                     width: "100%",
                                     maxWidth: "600px",
                                 }} />
@@ -404,7 +407,12 @@ function Body() {
                                             alt="List Gambar"
                                             draggable="false"
                                             onClick={() => handleOpenModal(gambar)}
-                                            style={{ cursor: "pointer" }}
+                                            style={{
+                                                cursor: "pointer",
+
+                                                userDrag: "none",
+                                                userSelect: "none",
+                                            }}
                                         />
                                     </ImageListItem>
                                 ))}
@@ -437,6 +445,9 @@ function Body() {
                             alt="Gambar Putar"
                             draggable="false"
                             style={{
+                                userDrag: "none",
+                                userSelect: "none",
+
                                 maxWidth: "90vw",
                                 maxHeight: '90vh',
                                 boxShadow: "0 5px 20px 0 rgba(0, 0, 0, 0.1)",
