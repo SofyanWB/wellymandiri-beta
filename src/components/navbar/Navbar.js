@@ -21,7 +21,7 @@ function Navbar() {
                     justifyContent: "center",
                 }}>
                 <img
-                    src='/assets/Logo/WM-Logo.png'
+                    src='././assets/Logo/WM-Logo.png'
                     alt="Gambar"
                     draggable="false"
                     style={{
