@@ -10,6 +10,12 @@ export const BoxForm = styled(Box)(({ theme }) => ({
     maxWidth: "1500px",
     margin: "200px auto",
     textAlign: "center",
+
+    width: "100vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
 }));
 
 export const BoxAlurPelaksanaan = styled(Box)(({ theme }) => ({

@@ -316,19 +316,24 @@ function Body() {
 
     return (
         <ThemeProvider theme={theme}>
-            <BoxContainer>
+            <section style={{
+                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0), rgba(186, 223, 255, 0.2))",
+                height: "600px",
+            }}>
                 <BoxForm>
                     <Grid container
                         spacing={2}
                         justifyContent="center"
                         alignItems="center">
                         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-                            <img style={{
-                                width: "100%",
-                                maxWidth: "600px",
-                            }}
-                                alt=""
-                                src="assets/Gambar/Owner-1.jpg" />
+                            <img
+                                alt="Owner"
+                                src="assets/Gambar/Owner-1.jpg"
+                                draggable="false"
+                                style={{
+                                    width: "100%",
+                                    maxWidth: "600px",
+                                }} />
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                             <TitleText>CV. Welly Mandiri</TitleText>
@@ -369,7 +374,7 @@ function Body() {
                         </Grid>
                     </Grid>
                 </BoxForm>
-            </BoxContainer>
+            </section>
             <BoxFAQ>
                 <Grid container
                     spacing={2}
@@ -396,7 +401,8 @@ function Body() {
                                             srcSet={`${gambar.imgSrc}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                             src={`${gambar.imgSrc}?w=248&fit=crop&auto=format`}
                                             loading="lazy"
-                                            alt=""
+                                            alt="List Gambar"
+                                            draggable="false"
                                             onClick={() => handleOpenModal(gambar)}
                                             style={{ cursor: "pointer" }}
                                         />
@@ -428,7 +434,8 @@ function Body() {
                         justifyContent="center"
                         gap={2}>
                         <img src={selectedImage?.imgSrc}
-                            alt=""
+                            alt="Gambar Putar"
+                            draggable="false"
                             style={{
                                 maxWidth: "90vw",
                                 maxHeight: '90vh',
