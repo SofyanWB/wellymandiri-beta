@@ -14,11 +14,16 @@ import {
     ImageList,
     ImageListItem,
     Modal,
+    Stack,
     ThemeProvider,
     Typography,
     useMediaQuery
 } from "@mui/material";
 import theme from "../theme/theme";
+
+import RoomIcon from '@mui/icons-material/Room';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import Rotate90DegreesCwIcon from '@mui/icons-material/Rotate90DegreesCw';
 
 function Body() {
     document.title = "CV. Welly Mandiri";
@@ -323,26 +328,44 @@ function Body() {
                                 maxWidth: "600px",
                             }}
                                 alt=""
-                                src="assets/Gambar/Owner-1.jpg" />
+                                src="/assets/Gambar/Owner-1.jpg" />
                         </Grid>
                         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                             <TitleText>CV. Welly Mandiri</TitleText>
-                            <TitleLittleText sx={{ margin: "20px 0 20px 0" }}>Tekan tombol di bawah untuk menuju ke alamat</TitleLittleText>
-
-                            <Button variant="contained" disableElevation href="https://maps.app.goo.gl/TMEpYxm59YQZzeff7" target="_blank"
-                                sx={{
-                                    boxShadow: "0 5px 20px 0 rgba(0, 0, 0, 0.06)",
-                                    height: "45px",
-                                    width: "200px",
-                                    fontSize: "18px",
-                                    color: "white",
-                                    backgroundColor: "#F7941D",
-                                    borderRadius: 8,
-                                    textTransform: "none",
-                                    margin: "0 auto",
-                                }}>
-                                Tekan Disini
-                            </Button>
+                            <TitleLittleText sx={{ margin: "20px 0 0 0" }}>Tekan tombol di bawah untuk menuju ke alamat.</TitleLittleText>
+                            <TitleLittleText sx={{ margin: "0 0 20px 0" }}>Info pemesanan melalu WhatsApp di bawah.</TitleLittleText>
+                            <Stack
+                                direction="row"
+                                alignItems="center"
+                                justifyContent="center"
+                                gap={1}>
+                                <Button variant="contained" disableElevation href="https://maps.app.goo.gl/TMEpYxm59YQZzeff7" target="_blank"
+                                    sx={{
+                                        minWidth: "180px",
+                                        boxShadow: "0 5px 20px 0 rgba(0, 0, 0, 0.06)",
+                                        height: "45px",
+                                        fontSize: "18px",
+                                        color: "white",
+                                        backgroundColor: "#1455A3",
+                                        borderRadius: 8,
+                                        textTransform: "none",
+                                    }}>
+                                    <RoomIcon style={{ marginRight: "10px" }} />Google Maps
+                                </Button>
+                                <Button variant="contained" disableElevation href="https://wa.me/6287888866213" target="_blank"
+                                    sx={{
+                                        minWidth: "180px",
+                                        boxShadow: "0 5px 20px 0 rgba(0, 0, 0, 0.06)",
+                                        height: "45px",
+                                        fontSize: "18px",
+                                        color: "white",
+                                        backgroundColor: "#25d366",
+                                        borderRadius: 8,
+                                        textTransform: "none",
+                                    }}>
+                                    <WhatsAppIcon style={{ marginRight: "10px" }} />WhatsApp
+                                </Button>
+                            </Stack>
                         </Grid>
                     </Grid>
                 </BoxForm>
@@ -357,7 +380,8 @@ function Body() {
                         <TitleText sx={{ margin: "50px 0 10px 0" }}>GALLERY</TitleText>
                         <Divider
                             style={{
-                                backgroundColor: "#004581",
+                                // backgroundColor: "#004581",
+                                backgroundColor: "black",
                                 height: 5,
                                 width: '100%',
                             }}
@@ -398,17 +422,23 @@ function Body() {
                         maxHeight: '100%',
                     }}
                 >
-                    <img src={selectedImage?.imgSrc}
-                        alt=""
-                        style={{
-                            maxWidth: "90vw",
-                            maxHeight: '90vh',
-                            boxShadow: "0 5px 20px 0 rgba(0, 0, 0, 0.1)",
-                            transform: `rotate(${rotation}deg)`,
-                        }} />
-                    <Button variant="contained" onClick={rotateImage}>
-                        Putar 90 Derajat
-                    </Button>
+                    <Stack
+                        direction="column"
+                        alignItems="center"
+                        justifyContent="center"
+                        gap={2}>
+                        <img src={selectedImage?.imgSrc}
+                            alt=""
+                            style={{
+                                maxWidth: "90vw",
+                                maxHeight: '90vh',
+                                boxShadow: "0 5px 20px 0 rgba(0, 0, 0, 0.1)",
+                                transform: `rotate(${rotation}deg)`,
+                            }} />
+                        <Button variant="contained" onClick={rotateImage}>
+                            <Rotate90DegreesCwIcon style={{ marginRight: "10px" }} /> Putar
+                        </Button>
+                    </Stack>
                 </Box>
             </Modal>
         </ThemeProvider>

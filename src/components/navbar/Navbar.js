@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, AppBar, Typography } from "@mui/material";
+import { Box, AppBar } from "@mui/material";
 
 function Navbar() {
 
@@ -21,7 +21,7 @@ function Navbar() {
                     justifyContent: "center",
                 }}>
                 <img
-                    src='././assets/Logo/WM-Logo.png'
+                    src='/assets/Logo/WM-Logo.png'
                     alt="Gambar"
                     draggable="false"
                     style={{

@@ -58,7 +58,8 @@ export const TitleText = styled(Typography)(({ theme }) => ({
     fontStyle: "normal",
     fontWeight: 600,
     lineHeight: "normal",
-    color: "#004581",
+    color: "black",
+    // color: "#004581",
 }));
 
 export const TitleLittleText = styled(Typography)(({ theme }) => ({
